@@ -1,11 +1,11 @@
 import React from 'react';
-import { addNavigationHelpers, StackNavigator } from 'react-navigation';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
 import { createStore, combineReducers } from 'redux';
 import { connect } from 'react-redux';
 import MainPage from './MainPage';
 import ChooseColorPage from './ChooseColorPage';
 
-export const AppNavigator = StackNavigator({
+export const AppNavigator = createStackNavigator({
   Main: { screen: MainPage },
   ChooseColor: {
     screen: ChooseColorPage,
@@ -17,12 +17,13 @@ export const AppNavigator = StackNavigator({
   mode: 'modal'
 });
 
+// Not sure how this piece works, as the app runs fine without it
 const AppWithNavigationState = ({ dispatch, nav }) => (
-  <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />
+  <AppNavigator navigation={{ dispatch, state: nav }} />
 );
 
 const mapStateToProps = state => ({
   nav: state.nav,
 });
 
-export default connect(mapStateToProps)(AppWithNavigationState);
+export default connect(mapStateToProps)(createAppContainer(AppNavigator));
