@@ -5,12 +5,12 @@ import { colorChanged } from '../actions/ColorChangedAction.js';
 import { COLORS } from '../state/Colors.js';
 
 class ChooseColorPage extends Component {
-	
+
   onSelectColor(colorName) {
     this.props.colorChanged({ colorName });
     this.props.navigation.goBack();
   }
-	
+
   render() {
     return (
       <View>

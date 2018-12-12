@@ -17,11 +17,6 @@ export const AppNavigator = createStackNavigator({
   mode: 'modal'
 });
 
-// Not sure how this piece works, as the app runs fine without it
-const AppWithNavigationState = ({ dispatch, nav }) => (
-  <AppNavigator navigation={{ dispatch, state: nav }} />
-);
-
 const mapStateToProps = state => ({
   nav: state.nav,
 });
