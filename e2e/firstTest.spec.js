@@ -1,3 +1,5 @@
+const { takeScreenshot } = require ('./helpers')
+
 describe('Example', () => {
   beforeEach(async () => {
     await device.reloadReactNative();
