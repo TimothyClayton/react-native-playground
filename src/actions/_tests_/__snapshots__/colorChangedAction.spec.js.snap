@@ -1,39 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dispatch colorChanged action 1`] = `
-Array [
-  Object {
-    "payload": Object {
-      "colorName": "BLUE",
-    },
-    "type": "COLOR_CHANGED",
-  },
-]
-`;
-
-exports[`Dispatch colorChanged action 2`] = `
-Array [
-  Object {
-    "payload": Object {
-      "colorName": "BLUE",
-    },
-    "type": "COLOR_CHANGED",
-  },
-]
-`;
-
 exports[`Dispatches colorChanged action 1`] = `
-Array [
-  Object {
-    "payload": Object {
-      "colorName": "BLUE",
-    },
-    "type": "COLOR_CHANGED",
-  },
-]
-`;
-
-exports[`Dispatches colorChanged action 2`] = `
 Array [
   Object {
     "payload": Object {
