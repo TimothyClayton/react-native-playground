@@ -1,5 +1,5 @@
-const { execSync } = require('child_process')
-const { existsSync, mkdirSync } = require('fs')
+import { execSync } from 'child_process';
+import { existsSync, mkdirSync } from 'fs';
 
 const SCREENSHOT_DIR = '/tmp/screenshots'
 
@@ -16,4 +16,4 @@ const takeScreenshot = () => {
   execSync(`xcrun simctl io booted screenshot ${screenshotFilename}`, SCREENSHOT_OPTIONS)
 }
 
-module.exports = { takeScreenshot }
+export default { takeScreenshot }

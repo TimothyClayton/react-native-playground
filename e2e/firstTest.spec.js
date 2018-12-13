@@ -1,4 +1,4 @@
-const { takeScreenshot } = require ('./helpers')
+import { takeScreenshot } from './helpers';
 
 describe('Example', () => {
   beforeEach(async () => {
@@ -7,6 +7,7 @@ describe('Example', () => {
 
   it('should have a choose color button', async () => {
     await expect(element(by.id('color-options-button'))).toBeVisible();
+    await expect(element(by.id('main-view'))).toBeVisible();
   });
 
   // it('should show hello screen after tap', async () => {

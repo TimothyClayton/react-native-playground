@@ -18,7 +18,7 @@ class MainPage extends Component {
   render() {
     const color = this.selectedColor();
     return (
-      <View style={{ flex: 1, alignSelf: 'stretch', backgroundColor: color }}>
+      <View style={{ flex: 1, alignSelf: 'stretch', backgroundColor: color }} testID='main-view'>
         <Button 
            onPress={this.onChooseColor.bind(this)}
            color="#FFF"
