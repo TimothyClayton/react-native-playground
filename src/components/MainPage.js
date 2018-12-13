@@ -23,6 +23,7 @@ class MainPage extends Component {
            onPress={this.onChooseColor.bind(this)}
            color="#FFF"
            title="Choose Color"
+           testID='color-options-button'
         />
       </View>
     )

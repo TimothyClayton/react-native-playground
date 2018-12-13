@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { colorChanged } from '../actions/ColorChangedAction.js';
 import { COLORS } from '../state/Colors.js';
 
-class ChooseColorPage extends Component {
+export class ChooseColorPage extends Component {
 
   onSelectColor(colorName) {
     this.props.colorChanged({ colorName });
