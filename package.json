@@ -21,6 +21,7 @@
     "enzyme-adapter-react-16": "^1.1.0",
     "enzyme-to-json": "^3.3.4",
     "jest": "23.6.0",
+    "jest-cli": "^23.6.0",
     "metro-react-native-babel-preset": "0.50.0",
     "mocha": "^5.2.0",
     "react-dom": "^16.6.3",
